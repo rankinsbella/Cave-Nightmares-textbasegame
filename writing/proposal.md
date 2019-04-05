@@ -18,7 +18,7 @@ for being able to read in user input with an action being attached to that input
 Input and output are also going to need to be closely watched because the user
 input is going to determine a lot of how the user experience is going to be
 moving forward. The output is going to be how the game interacts with the player.
-Other Java programing concepts that would be implemented possible could be the
+Other Java programming concepts that would be implemented possible could be the
 creation of constructors and the scanner class could be used heavily. The scanner
 class would be the connection between the input of the user and the output of the
 program. There would probably be a set amount of choices which the user has to
