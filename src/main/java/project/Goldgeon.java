@@ -22,6 +22,7 @@ public class Goldgeon {
   System.out.println("Choose your gender");
   Gender gen1 = new Gender("male");
   Gender gen2 = new Gender("female");
+  //
 
 
   }
