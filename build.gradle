@@ -20,14 +20,14 @@ jar {
   manifest {
     attributes(
         'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
-        'Main-Class': 'project.Main'
+        'Main-Class': 'project.Goldgeon'
         )
   }
 }
 
 // give the name of the application to run with "gradle run" command
 apply plugin: 'application'
-mainClassName = 'project.Main'
+mainClassName = 'project.Goldgeon'
 
 // specify that the application will accept input from System.in
 run {
