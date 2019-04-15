@@ -1,9 +1,13 @@
 package project;
-//Constructor for gender
+
+//Constructor for Player
 public class Player {
-String gender;
-  public Player(String G) {
-  this.gender = G;
+  String gender;
+  String name;
+
+  public Player(String gen, String na) {
+    this.gender = gen;
+    this.name = na;
 
   }
 
