@@ -10,5 +10,4 @@ public class Player {
     this.name = na;
 
   }
-
 }
