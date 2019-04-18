@@ -13,7 +13,7 @@ public class Goldgeon {
 
 
     //introduction to your adventure
-    System.out.println("Adventurer, you are a renegade pirate in search for gold");
+    System.out.println("Adventurer, you are ae.gethealth() >  renegade pirate in search for gold");
     System.out.println("In the Bermuda triangle, your team of Pirate mates discover"
         + " an uncharted island.");
     System.out.println("As your crew inches closer, the waves around you reach"
@@ -27,7 +27,7 @@ public class Goldgeon {
     String choice = scan.nextLine();
     System.out.println("Choose your Name");
     String name = scan.nextLine();
-    Player one = new Player(choice, name);
+    Player one = new Player(choice, name, 80);
     System.out.println("Hello " + name);
 
     //scene for first encounter
@@ -41,7 +41,10 @@ public class Goldgeon {
     System.out.println("A new monster has appeared: " + type);
 
     //gameplay
-    
+    while(one.gethealth() > 0) {
+      one.attack();
+      // monster attack
+    }
 
   }
 

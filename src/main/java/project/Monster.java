@@ -32,4 +32,8 @@ public class Monster{
   public String gettype() {
     return type;
   }
+
+
+
+  
 }
