@@ -6,18 +6,22 @@ public class Player {
   String name;
   int health;
   int coins;
-
-  public Player(String gen, String na, int he) {
+//connecting player to attributes
+  public Player(String gen, String na, int he, int co) {
     this.gender = gen;
     this.name = na;
     this.health = he;
-    coins = 0;
+    this.coin = co;
   }
+  //Player damage output and health
+  public Player() {
+    int he = 100;
 
-
+  }
+  //outcome of attack
   public void attack() {
-    coins += 10;
-    health -= 3;
+    coins += 3;
+    health -= 30;
   }
 
   public int gethealth(){
