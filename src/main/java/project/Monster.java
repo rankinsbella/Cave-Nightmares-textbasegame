@@ -10,11 +10,11 @@ public class Monster{
     int health = 30;
     int damage = 20;
     type = "Skeleton";
-    int health = 20;
-    int damage = 30;
+    int health2 = 20;
+    int damage2 = 30;
     type = "Mutant Rat";
-    int health = 40;
-    int damage = 25;
+    int health3 = 40;
+    int damage3 = 25;
 
   }
   //Spawn system

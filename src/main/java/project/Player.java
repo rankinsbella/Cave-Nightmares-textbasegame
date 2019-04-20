@@ -2,26 +2,21 @@ package project;
 
 //Constructor for Player
 public class Player {
-  String gender;
   String name;
+  String choice;
   int health;
-  int coins;
+
 //connecting player to attributes
-  public Player(String gen, String na, int he, int co) {
-    this.gender = gen;
-    this.name = na;
-    this.health = he;
-    this.coin = co;
-  }
-  //Player damage output and health
-  public Player() {
-    int he = 100;
+  public Player(String name, String choice, int health) {
+    this.name = name;
+    this.choice = choice;
+    this.health = health;
+    Player one = new Player(choice, name, health);
 
   }
   //outcome of attack
   public void attack() {
-    coins += 3;
-    health -= 30;
+    health -= 20;
   }
 
   public int gethealth(){
