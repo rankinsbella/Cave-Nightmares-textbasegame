@@ -20,12 +20,12 @@ public class Monster{
   //Spawn system
   public void type() {
     Random rand = new Random();
-    int zombie = rand.nextInt(3);
-    if (zombie == 0){
+    int monster = rand.nextInt(3);
+    if (monster == 0){
       type = "Zombie";
       coin = 3;
     }
-    else if (zombie == 1){
+    else if (monster == 1){
       type = "Skeleton";
       coin = 3;
     }

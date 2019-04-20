@@ -11,7 +11,7 @@ public class Player {
     this.name = name;
     this.choice = choice;
     this.health = health;
-    Player one = new Player(choice, name, health);
+    Player main = new Player(choice, name, health);
 
   }
   //outcome of attack
