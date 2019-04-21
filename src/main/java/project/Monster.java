@@ -4,7 +4,7 @@ import java.util.Random;
 //Initialize monster class variables
 public class Monster{
   String type;
-  int coin;
+
   public Monster() {
     type = "Zombie";
     int health = 30;
@@ -23,15 +23,15 @@ public class Monster{
     int monster = rand.nextInt(3);
     if (monster == 0){
       type = "Zombie";
-      coin = 3;
+
     }
     else if (monster == 1){
       type = "Skeleton";
-      coin = 3;
+
     }
     else {
       type = "Mutant Rat";
-      coin = 3;
+      
     }
   }
 

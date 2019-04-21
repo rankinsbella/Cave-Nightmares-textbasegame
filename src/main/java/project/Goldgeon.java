@@ -2,6 +2,7 @@ package project;
 
 import java.util.Random;
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Goldgeon {
 
@@ -34,11 +35,6 @@ public class Goldgeon {
     System.out.println(name + " Enters the dimly lit cave and finds the severed"
     + " remains of a skeleton");
     System.out.println("Suddenly, " + name + " hears footsetps inching closer to them");
-    //user input
-    //String answer = new Answer();
-    //answer.one();
-    //answer.two();
-    //answer.three();
 
     //Battle
     Monster monster = new Monster();
@@ -52,20 +48,20 @@ public class Goldgeon {
     System.out.println("two. Say your prayers and prepare to die");
     System.out.println("three. Run away");
     System.out.println("Enter a number");
+    String choice2 = scan.nextLine();
+    choice2.eqauls();
 
-    //String answer = scan.nextLine();
+      if(choice2.equals() == one){
+        System.out.println(name + "attacked" + type);
+        if(choice2.equals() == two){
+          System.out.println(name + "says a quick prayer and dies");
+          System.out.println("game over");
+          if (choice2.equals())
+          System.out.println(name + "ran away");
+        }
+    }
 
-    /**if(answer.one() == one){
-      System.out.println(name + "attacked" + type);
-      if(answer.two() == two){
-        System.out.println(name + "says a quick prayer and dies");
-        System.out.println("game over");
-        if (answer.three())
-        //(answer.three())
-        System.out.println(name + "ran away");
-      }
-      */
+
 
     }
   }
-//}
