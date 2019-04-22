@@ -4,17 +4,19 @@ import java.util.Random;
 //Initialize monster class variables
 public class Monster{
   String type;
+  int damage;
+  String [] types = {"Zombie", "Skeleton", "Mutant Rat"};
 
   public Monster() {
     type = "Zombie";
-    int health = 30;
-    int damage = 20;
-    type = "Skeleton";
-    int health2 = 20;
-    int damage2 = 30;
-    type = "Mutant Rat";
-    int health3 = 40;
-    int damage3 = 25;
+    //int health = 30;
+    damage = 20;
+    //type = "Skeleton";
+    //int health2 = 20;
+    //int damage2 = 30;
+    //type = "Mutant Rat";
+    //int health3 = 40;
+    //int damage3 = 25;
 
   }
   //Spawn system
@@ -22,16 +24,17 @@ public class Monster{
     Random rand = new Random();
     int monster = rand.nextInt(3);
     if (monster == 0){
-      type = "Zombie";
+      type = types[0];
+      damage = 20;
 
     }
     else if (monster == 1){
-      type = "Skeleton";
-
+      type = types[1];
+      damage = 30;
     }
     else {
-      type = "Mutant Rat";
-      
+      type = types[2];
+      damage = 10;
     }
   }
 
@@ -39,7 +42,9 @@ public class Monster{
     return type;
   }
 
-
+  public int getdamage() {
+    return damage;
+  }
 
 
 }

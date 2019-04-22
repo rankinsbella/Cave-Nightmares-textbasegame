@@ -30,6 +30,7 @@ public class Goldgeon {
     String name = scan.nextLine();
     System.out.println("Hello " + name);
     System.out.println("");
+    Player main = new Player(choice, name, 60);
 
     //scene for first encounter
     System.out.println(name + " Enters the dimly lit cave and finds the severed"
@@ -37,31 +38,33 @@ public class Goldgeon {
     System.out.println("Suddenly, " + name + " hears footsetps inching closer to them");
 
     //Battle
-    Monster monster = new Monster();
-    monster.type();
-    String type = monster.gettype();
-    System.out.println("A new monster has appeared " + type);
-    System.out.println(type + " leaps forward to attack with their rusty blade");
-    System.out.println("");
-    System.out.println("What will you do?");
-    System.out.println("one. Attack");
-    System.out.println("two. Say your prayers and prepare to die");
-    System.out.println("three. Run away");
-    System.out.println("Enter a number");
-    String choice2 = scan.nextLine();
-    choice2.eqauls();
+    do {
+      Monster monster = new Monster();
+      monster.type();
+      String type = monster.gettype();
+      System.out.println("A new monster has appeared " + type);
+      System.out.println(type + " leaps forward to attack with their rusty blade");
+      System.out.println("");
+      System.out.println("What will you do?");
+      System.out.println("one. Attack");
+      System.out.println("two. Say your prayers and prepare to die");
+      System.out.println("three. Run away");
+      System.out.println("Enter a number");
+      int choice2 = scan.nextInt();
 
-      if(choice2.equals() == one){
+      if(choice2 == 1) {
         System.out.println(name + "attacked" + type);
-        if(choice2.equals() == two){
-          System.out.println(name + "says a quick prayer and dies");
-          System.out.println("game over");
-          if (choice2.equals())
-          System.out.println(name + "ran away");
-        }
-    }
-
-
-
-    }
+        int damage = monster.getdamage();
+        main.attack(damage);
+        System.out.println("Health is" + main.gethealth());
+      }
+      else if(choice2 == 2) {
+        System.out.println(name + "says a quick prayer and dies");
+        System.out.println("game over");
+      }
+      else {
+        System.out.println(name + "ran away");
+      }
+    } while (main.gethealth() > 0);
   }
+}
