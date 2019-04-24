@@ -1,23 +1,24 @@
 package project;
 
+import java.lang.Math;
 import java.util.Random;
 import java.util.Scanner;
-import java.lang.Math;
 
 public class Goldgeon {
 
   public static void main(String[] args) {
-    //creating instance of variables
-    //creating instance of scanner and random
+    /** Creating instances of the scannenr class and random class.
+    */
+
     Scanner scan = new Scanner(System.in);
     Random generator = new Random();
 
     //introduction to your adventure
-    System.out.println("Adventurer, you are a renegade pirate in search for gold");
+    System.out.println("Adventurer, you're a renegade pirate in search for gold");
     System.out.println("In the Bermuda triangle, your team of Pirate mates discover"
-    + " an uncharted island.");
+        + " an uncharted island.");
     System.out.println("As your crew inches closer, the waves around you reach"
-    + " incredible heights, your boat takes on too much water.");
+        + " incredible heights, your boat takes on too much water.");
     System.out.println("All of your crew members die and you wash up on a beach");
     System.out.println("You awake to find a cave, adventure awaits");
     System.out.println("This is your story.");
@@ -34,7 +35,7 @@ public class Goldgeon {
 
     //scene for first encounter
     System.out.println(name + " Enters the dimly lit cave and finds the severed"
-    + " remains of a skeleton");
+        + " remains of a skeleton");
     System.out.println("Suddenly, " + name + " hears footsetps inching closer to them");
 
     //Battle
@@ -52,13 +53,13 @@ public class Goldgeon {
       System.out.println("Enter a number");
       int choice2 = scan.nextInt();
 
-      if(choice2 == 1) {
+      if (choice2 == 1) {
         System.out.println(name + "attacked" + type);
         int damage = monster.getdamage();
         main.attack(damage);
         System.out.println("Health is" + main.gethealth());
       }
-      else if(choice2 == 2) {
+      else if (choice2 == 2) {
         System.out.println(name + "says a quick prayer and dies");
         System.out.println("game over");
       }

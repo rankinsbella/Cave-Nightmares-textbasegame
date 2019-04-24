@@ -6,17 +6,11 @@ public class Monster{
   String type;
   int damage;
   String [] types = {"Zombie", "Skeleton", "Mutant Rat"};
-
+  
+  //declaring the object monster
   public Monster() {
     type = "Zombie";
-    //int health = 30;
     damage = 20;
-    //type = "Skeleton";
-    //int health2 = 20;
-    //int damage2 = 30;
-    //type = "Mutant Rat";
-    //int health3 = 40;
-    //int damage3 = 25;
 
   }
   //Spawn system
