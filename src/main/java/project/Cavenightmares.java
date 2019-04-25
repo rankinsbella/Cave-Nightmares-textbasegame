@@ -32,8 +32,9 @@ public class Cavenightmares {
     System.out.println("Choose your Name");
     String name = scan.nextLine();
     System.out.println("Hello " + name);
-    System.out.println("");
     Player main = new Player(choice, name, 100);
+    System.out.println("Health is " + main.gethealth());
+    System.out.println("");
 
     //scene for first encounter
     System.out.println(name + " Enters the dimly lit cave and finds the severed"
@@ -66,8 +67,8 @@ public class Cavenightmares {
         System.out.println("Health is " + main.gethealth());
       }
       else if (choice2 == 2) {
-        System.out.println(name + " says a quick prayer as" + type + "slices"
-            + "through their abdomen cutting them in half");
+        System.out.println(name + " says a quick prayer as a " + type + " slices "
+            + "through their abdomen cutting them in half ");
         System.out.println("GAME OVER");
       break;
       }
