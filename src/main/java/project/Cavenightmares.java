@@ -71,8 +71,7 @@ public class Cavenightmares {
         System.out.println(name + " says a quick prayer as a " + type + " slices "
             + "through their abdomen cutting them in half ");
         System.out.println("GAME OVER");
-        break;
-      }
+        break; }
       else {
         System.out.println(name + " ran away");
         System.out.println("");
@@ -80,6 +79,7 @@ public class Cavenightmares {
         System.out.println("You hear footsteps behind you");
         System.out.println("The shadowy figure charges at you");
       }
-    } while (main.gethealth() > 0);
+    }
+    while (main.gethealth() > 0);
   }
 }
