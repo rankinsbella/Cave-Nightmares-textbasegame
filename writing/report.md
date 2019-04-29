@@ -96,3 +96,5 @@ independently felt rewarding because of the perseverance I showed throughout thi
 entire process but I would have had a less stressful experience working with other
 people. The computer science field is a field that requires a lot of collaboration
 and team effort to make robust products.
+
+Format: ![Charts for Report](https://docs.google.com/presentation/d/1Jgl0No-oaK1A3PsDVX5PedetKZ7OIRJLe-aaEIuvquQ/edit#slide=id.g5138e82a46_0_2)
