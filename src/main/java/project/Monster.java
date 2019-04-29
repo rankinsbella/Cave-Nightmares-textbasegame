@@ -1,7 +1,7 @@
 package project;
 
 import java.util.Random;
-//Initialize monster class variables
+//Initializing monster class variables that are used
 
 public class Monster{
   String type;

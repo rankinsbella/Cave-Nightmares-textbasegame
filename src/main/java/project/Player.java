@@ -7,7 +7,7 @@ public class Player {
   int health;
 
 
-  /**connecting player to attributes.
+  /**connecting player to attributes it has.
   */
   public Player(String name, String choice, int health) {
     this.name = name;

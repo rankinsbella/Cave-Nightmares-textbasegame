@@ -71,7 +71,8 @@ public class Cavenightmares {
         System.out.println(name + " says a quick prayer as a " + type + " slices "
             + "through their abdomen cutting them in half ");
         System.out.println("GAME OVER");
-        break; }
+        break;
+      }
       else {
         System.out.println(name + " ran away");
         System.out.println("");
