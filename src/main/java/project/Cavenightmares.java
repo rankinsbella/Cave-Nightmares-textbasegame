@@ -49,11 +49,11 @@ public class Cavenightmares {
       String type = monster.gettype();
       System.out.println("A new monster has appeared: " + type);
       System.out.println("");
-      System.out.println(type + " leaps forward to attack with their rusty blade");
+      System.out.println("The " + type + " leaps forward to attack with their rusty blade");
       System.out.println("");
       System.out.println("What will you do?");
       System.out.println("1. Attack");
-      System.out.println("2. Say your prayers and prepare to die");
+      System.out.println("2. Say your prayers");
       System.out.println("3. Run away");
       System.out.println("Enter a number");
       int choice2 = scan.nextInt();
