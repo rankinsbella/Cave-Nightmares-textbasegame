@@ -6,8 +6,8 @@ public class Monster{
   String type;
   int damage;
   String [] types = {"Zombie", "Skeleton", "Mutant Rat"};
-  
-  //declaring the object monster
+
+  //constructor for monster
   public Monster() {
     type = "Zombie";
     damage = 20;
