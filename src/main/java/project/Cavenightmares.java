@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Cavenightmares {
 
   public static void main(String[] args) {
+
     /** Creating instances of the scannenr class and random class.
     */
 
@@ -70,7 +71,7 @@ public class Cavenightmares {
         System.out.println(name + " says a quick prayer as a " + type + " slices "
             + "through their abdomen cutting them in half ");
         System.out.println("GAME OVER");
-      break;
+        break;
       }
       else {
         System.out.println(name + " ran away");

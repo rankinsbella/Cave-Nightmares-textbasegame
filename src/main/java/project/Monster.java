@@ -2,25 +2,27 @@ package project;
 
 import java.util.Random;
 //Initialize monster class variables
+
 public class Monster{
   String type;
   int damage;
   String [] types = {"Zombie", "Skeleton", "Mutant Rat"};
 
-  //constructor for monster
+  /** constructor for monsters.
+  */
   public Monster() {
     type = "Zombie";
     damage = 20;
 
   }
-  //Spawn system
+  /** spawn system for randomly generating monsters.
+  */
   public void type() {
     Random rand = new Random();
     int monster = rand.nextInt(3);
     if (monster == 0){
       type = types[0];
       damage = 20;
-
     }
     else if (monster == 1){
       type = types[1];

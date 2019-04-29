@@ -6,7 +6,9 @@ public class Player {
   String choice;
   int health;
 
-  //connecting player to attributes
+
+  /**connecting player to attributes.
+  */
   public Player(String name, String choice, int health) {
     this.name = name;
     this.choice = choice;
@@ -19,7 +21,8 @@ public class Player {
     health -= damage;
   }
   //calling upon the method health to retrieve player health
-  public int gethealth(){
+
+  public int gethealth() {
     return health;
   }
 }
